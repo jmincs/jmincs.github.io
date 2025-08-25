@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume - Personal Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Resume — Brian Hong</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Resume of Brian Hong — UCLA Computer Science & Mathematics. Experience at TablePal and Mayo Clinic; projects in AI, computer vision, and full-stack engineering.">
+  <meta name="keywords" content="Brian Hong, UCLA, Software Engineer, Internship, CS, Mathematics, AI, Machine Learning, Computer Vision, React, Python, C++">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +17,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,11 +42,9 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
+      <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Personal</h1>
+        <h1 class="sitename m-0">Brian Hong</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -52,30 +52,11 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html" class="active">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -86,9 +67,15 @@
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
+            <div class="col-lg-10">
               <h1>Resume</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p class="mb-3">
+                I turn research and prototypes into reliable, user-friendly software.
+              </p>
+              <!-- Optional: link your hosted PDF in /assets/docs/ -->
+              <!-- <a class="btn btn-primary btn-sm" href="assets/docs/Brian_Hong_Resume.pdf" target="_blank" rel="noreferrer">
+                Download PDF
+              </a> -->
             </div>
           </div>
         </div>
@@ -101,112 +88,132 @@
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
-
       <div class="container">
-
         <div class="row">
 
+          <!-- Left column -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
+            <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+              <h4>Brian Hong</h4>
+              <p><em>Software engineer with experience in LLM tooling, computer vision, and full-stack development. Recent work spans RLHF-tuned assistants, real-time imaging pipelines, and clean web interfaces. Open to software engineering internships.</em></p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-geo-alt me-1"></i> Los Angeles, CA</li>
+                <li><i class="bi bi-telephone me-1"></i> <a href="tel:+14403189189">+1 (440) 318-9189</a></li>
+                <li><i class="bi bi-envelope me-1"></i> <a href="mailto:brianhong73@ucla.edu">brianhong73@ucla.edu</a></li>
+                <li><i class="bi bi-link-45deg me-1"></i> <a href="https://github.com/jmincs" target="_blank" rel="noreferrer">github.com/jmincs</a> · <a href="https://www.linkedin.com/in/brianhong" target="_blank" rel="noreferrer">linkedin.com/in/brianhong</a></li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
+              <h4>B.S. — Computer Science &amp; Mathematics</h4>
+              <h5>Sept 2023 – Present</h5>
+              <p><em>University of California, Los Angeles (UCLA) — Los Angeles, CA</em></p>
+              <p>Coursework and projects across mathematics, probability & statistics, algorithms, systems, ML, and web engineering.</p>
+            </div>
 
+            <h3 class="resume-title">Skills</h3>
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
+              <h4>Technical</h4>
+              <ul>
+                <li><strong>Languages:</strong> C++, Python, SQL, Java, JavaScript, C, Lisp</li>
+                <li><strong>Libraries:</strong> PyTorch, TensorFlow, OpenCV, Pandas, Matplotlib, Argparse</li>
+                <li><strong>Tools:</strong> React, Django, LangChain, Docker, Git/CI, Jupyter, Unreal Engine</li>
+              </ul>
+              <h4 class="mt-3">Certifications</h4>
+              <ul>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>Stanford Machine Learning Specialization</li>
+              </ul>
+            </div>
           </div>
+          <!-- /Left column -->
 
+          <!-- Right column -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+            <h3 class="resume-title">Experience</h3>
 
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4>Backend Developer — TablePal</h4>
+              <h5>Oct 2024 – Present</h5>
+              <p><em>On-site</em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>Fine-tuned GPT-4o-mini with RLHF; built a JSON-prioritized decision-tree layer for structured responses.</li>
+                <li>Shipped an admin interface to toggle Mongo vector uploads between DEV/PROD environments.</li>
+                <li>Implemented camera capture + ONNX MobileNetV3 segmentation (quantized U8) with OpenCV Canny for automated menu cropping.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
 
-          </div>
+            <div class="resume-item">
+              <h4>Software Engineer Intern — Mayo Clinic</h4>
+              <h5>May 2024 – Sept 2024</h5>
+              <p><em>Hybrid</em></p>
+              <ul>
+                <li>Extracted and visualized 3D/FL data from TomoCube HT scans into Unreal Engine for real-time exploration.</li>
+                <li>Built a React–Django pipeline to convert TomoCube scans to .tga textures for pixel-streaming visualization.</li>
+                <li>Added a Gaussian Mixture Model stage to separate background cells, aiding earlier tumor-structure analysis.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Projects Intern — ACM AI (UCLA)</h4>
+              <h5>Aug 2023 – Jun 2024</h5>
+              <p><em>On-site</em></p>
+              <ul>
+                <li>Explored latent diffusion and U-Net autoencoders for image reconstruction.</li>
+                <li>Built a LuxAI Kaggle agent with transformer-based action policy modeling in vector embeddings.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Teaching Assistant — AP Computer Science A</h4>
+              <h5>Aug 2022 – Jun 2023</h5>
+              <p><em>On-site</em></p>
+              <ul>
+                <li>Led debugging/code reviews; evaluated logic, syntax, and performance.</li>
+                <li>Co-designed Java lessons and facilitated collaborative sessions.</li>
+              </ul>
+            </div>
+          <!-- /Right column -->
 
         </div>
-
       </div>
-
-    </section><!-- /Resume Section -->
+    </section>
+    <!-- /Resume Section -->
 
   </main>
-
   <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Personal</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+    <div class="container text-center">
+      <h3 class="sitename">Brian Hong</h3>
+      <p class="mb-3">Let’s build reliable software that moves the needle. I’m open to collaborations and internships.</p>
+      <div class="social-links d-flex justify-content-center gap-2">
+        <a href="mailto:brianhong73@ucla.edu" aria-label="Email"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/jmincs" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/brianhong" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="tel:+14403189189" aria-label="Phone"><i class="bi bi-telephone"></i></a>
       </div>
-      <div class="container">
+      <div class="container mt-3">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+          <span>©</span> <strong class="px-1 sitename">Brian Hong</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">Brian Hong</a>
+          Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noreferrer">BootstrapMade</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <div id="preloader" aria-hidden="true"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -222,7 +229,5 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
