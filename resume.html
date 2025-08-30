@@ -28,14 +28,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="resume-page">
@@ -43,10 +35,8 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename m-0">Brian Hong</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -69,13 +59,8 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-10">
               <h1>Resume</h1>
-              <p class="mb-3">
-                I turn research and prototypes into reliable, user-friendly software.
-              </p>
-              <!-- Optional: link your hosted PDF in /assets/docs/ -->
-              <a class="btn btn-primary btn-sm" href="assets/docs/Hong_Resume_2025.pdf" target="_blank" rel="noreferrer">
-                View PDF
-              </a>
+              <p class="mb-3">I turn research and prototypes into reliable, user-friendly software.</p>
+              <a class="btn btn-primary btn-sm" href="assets/docs/Hong_Resume_2025.pdf" target="_blank" rel="noreferrer">View PDF</a>
             </div>
           </div>
         </div>
@@ -98,6 +83,7 @@
 
           <!-- Left column -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Brian Hong</h4>
@@ -106,7 +92,7 @@
                 <li><i class="bi bi-geo-alt me-1"></i> Los Angeles, CA</li>
                 <li><i class="bi bi-telephone me-1"></i> <a href="tel:+14403189189">+1 (440) 318-9189</a></li>
                 <li><i class="bi bi-envelope me-1"></i> <a href="mailto:brianhong73@ucla.edu">brianhong73@ucla.edu</a></li>
-                <li><i class="bi bi-link-45deg me-1"></i> <a href="https://github.com/jmincs" target="_blank" rel="noreferrer">github.com/jmincs</a> · <a href="https://www.linkedin.com/in/brianhong" target="_blank" rel="noreferrer">linkedin.com/in/brianhong</a></li>
+                <li><i class="bi bi-link-45deg me-1"></i> <a href="https://github.com/jmincs" target="_blank">github.com/jmincs</a> · <a href="https://jmincs.github.io/" target="_blank">jmincs.github.io</a></li>
               </ul>
             </div>
 
@@ -114,17 +100,15 @@
             <div class="resume-item">
               <h4>B.S. — Computer Science &amp; Mathematics</h4>
               <h5>Sept 2023 – Present</h5>
-              <p><em>University of California, Los Angeles (UCLA) — Los Angeles, CA</em></p>
-              <p>Coursework and projects across mathematics, probability & statistics, algorithms, systems, ML, and web engineering.</p>
+              <p><em>University of California, Los Angeles (UCLA)</em></p>
             </div>
 
-            <h3 class="resume-title">Skills</h3>
+            <h3 class="resume-title">Skills & Certifications</h3>
             <div class="resume-item">
-              <h4>Technical</h4>
               <ul>
                 <li><strong>Languages:</strong> C++, Python, SQL, Java, JavaScript, C, Lisp</li>
                 <li><strong>Libraries:</strong> PyTorch, TensorFlow, OpenCV, Pandas, Matplotlib, Argparse</li>
-                <li><strong>Tools:</strong> React, Django, LangChain, Docker, Git/CI, Jupyter, Unreal Engine</li>
+                <li><strong>Tools:</strong> React, Django, LangChain, Docker, Git/CI, Jupyter, Unreal Engine, Vim, Emacs, RStudio</li>
               </ul>
               <h4 class="mt-3">Certifications</h4>
               <ul>
@@ -137,27 +121,29 @@
 
           <!-- Right column -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
             <h3 class="resume-title">Experience</h3>
 
             <div class="resume-item">
               <h4>Backend Developer — TablePal</h4>
-              <h5>Oct 2024 – Present</h5>
+              <h5>Oct 2024 – Jun 2025</h5>
               <p><em>On-site</em></p>
               <ul>
-                <li>Fine-tuned GPT-4o-mini with RLHF; built a JSON-prioritized decision-tree layer for structured responses.</li>
-                <li>Shipped an admin interface to toggle Mongo vector uploads between DEV/PROD environments.</li>
-                <li>Implemented camera capture + ONNX MobileNetV3 segmentation (quantized U8) with OpenCV Canny for automated menu cropping.</li>
+                <li>Fine-tuned GPT-4o-mini assistant with RLHF and JSON guardrail tree, improving task completion on a 150-dialog eval set.</li>
+                <li>Delivered an admin panel and DEV/PROD vector-ingestion switch for Mongo-backed embeddings, eliminating misconfig deploys.</li>
+                <li>Implemented camera capture with ONNX MobileNetV3 segmentation and OpenCV Canny edge detection for automated menu cropping.</li>
+                <li>Added structured logging and latency dashboards to track P95 inference and IoU, integrated alerts into CI to block regressions.</li>
               </ul>
             </div>
 
             <div class="resume-item">
               <h4>Software Engineer Intern — Mayo Clinic</h4>
-              <h5>May 2024 – Sept 2024</h5>
+              <h5>Jun 2024 – Sept 2024</h5>
               <p><em>Hybrid</em></p>
               <ul>
-                <li>Extracted and visualized 3D/FL data from TomoCube HT scans into Unreal Engine for real-time exploration.</li>
-                <li>Built a React–Django pipeline to convert TomoCube scans to .tga textures for pixel-streaming visualization.</li>
-                <li>Added a Gaussian Mixture Model stage to separate background cells, aiding earlier tumor-structure analysis.</li>
+                <li>Built React + Django pipeline converting TomoCube HT scans to .tga textures for Unreal Engine pixel streaming at 120+ FPS.</li>
+                <li>Integrated Gaussian Mixture Model segmentation to clean texture maps, halving pre-labeling time for tumor triage.</li>
+                <li>Optimized GPU texture uploads and containerized workflow with Docker, cutting conversion time for 50-scan batches with CI tests.</li>
               </ul>
             </div>
 
@@ -166,8 +152,8 @@
               <h5>Aug 2023 – Jun 2024</h5>
               <p><em>On-site</em></p>
               <ul>
-                <li>Explored latent diffusion and U-Net autoencoders for image reconstruction.</li>
-                <li>Built a LuxAI Kaggle agent with transformer-based action policy modeling in vector embeddings.</li>
+                <li>Improved image reconstruction quality by integrating latent diffusion with U-Net autoencoders, raising PSNR by 2–3 dB.</li>
+                <li>Developed a transformer-based policy for LuxAI Kaggle with vector embeddings; validated with ablation tests.</li>
               </ul>
             </div>
 
@@ -176,10 +162,14 @@
               <h5>Aug 2022 – Jun 2023</h5>
               <p><em>On-site</em></p>
               <ul>
-                <li>Led debugging/code reviews; evaluated logic, syntax, and performance.</li>
-                <li>Co-designed Java lessons and facilitated collaborative sessions.</li>
+                <li>Guided students in debugging and code review; assessed logic, syntax, and performance.</li>
+                <li>Co-designed lesson plans and led collaborative instruction sessions.</li>
               </ul>
             </div>
+
+           
+
+          </div>
           <!-- /Right column -->
 
         </div>
@@ -188,32 +178,33 @@
     <!-- /Resume Section -->
 
   </main>
+
   <footer id="footer" class="footer dark-background">
     <div class="container text-center">
       <h3 class="sitename">Brian Hong</h3>
       <p class="mb-3">Let’s build reliable software that moves the needle. I’m open to collaborations and internships.</p>
       <div class="social-links d-flex justify-content-center gap-2">
-        <a href="mailto:brianhong73@ucla.edu" aria-label="Email"><i class="bi bi-envelope"></i></a>
-        <a href="https://github.com/jmincs" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/brianhong" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="tel:+14403189189" aria-label="Phone"><i class="bi bi-telephone"></i></a>
+        <a href="mailto:brianhong73@ucla.edu"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/jmincs" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/brianhong" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="tel:+14403189189"><i class="bi bi-telephone"></i></a>
       </div>
       <div class="container mt-3">
         <div class="copyright">
           <span>©</span> <strong class="px-1 sitename">Brian Hong</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noreferrer">BootstrapMade</a>
+          Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader" aria-hidden="true"></div>
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
